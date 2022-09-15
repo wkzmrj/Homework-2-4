@@ -1,0 +1,23 @@
+<!-- 10. 检测是否是2到4位汉字
+ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var a = prompt('');
+        var reg = /^[\u4e00-\u9fa5]{2,4}$/;
+        if (reg.test(a)){
+            alert('true');
+
+        } else {
+            alert('false');
+        }
+    </script>
+</body>
+</html>

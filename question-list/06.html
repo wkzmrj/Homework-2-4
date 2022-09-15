@@ -1,0 +1,26 @@
+<!-- 6. 将用户输入的网址全部转化成我们的官网。如www.baidu.com=>www.lagou.com
+
+ -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>Document</title>
+</head>
+
+<body>
+   <script>
+      var str = prompt('请输入一个网址')
+      if (/^w{3}\.\w+\.\w+$/.test(str)) {
+         alert(str.replace(str, "http://www.lagou.com"));
+      } 
+      else {
+         alert('您输入的网页格式有误')
+      }
+   </script>
+</body>
+
+</html>

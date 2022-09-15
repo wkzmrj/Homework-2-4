@@ -1,0 +1,24 @@
+<!-- 11. 检测昵称是否是有汉字字母数字下划线组成，6-8位
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var a = prompt("输入昵称");
+        var reg = /^[\w\u4e00-\u9fa5]{6,8}$/;
+        if (reg.test(a)) {
+            alert("昵称正常");
+        } else {
+            alert("昵称非法");
+        }
+    </script>
+</body>
